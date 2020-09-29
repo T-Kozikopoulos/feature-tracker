@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Feature Tracker</title>
+</head>
+<body>
+	<header>
+		<h1>Feature Tracker</h1>
+	</header>
+
+	<form>
+		<input type="text" class="feature-input" id="feature-input" placeholder="Add a new feature..." />
+		<div class="select">
+			<select name="features" class="filter-features">
+				<option value="all">All</option>
+		         <option value="complete">Complete</option>
+		         <option value="incomplete">Incomplete</option>
+			</select>
+		</div>
+		<button class="feature-button" id="feature-button" type="submit">
+			<i class="fas fa-plus-square"></i>
+		</button>
+	</form>
+
+	<div class="feature-container">
+		<ul class="feature-list" id="feature-list"></ul>
+	</div>
+
+	<script src="app.js"></script>
+ </body>
+</html>
